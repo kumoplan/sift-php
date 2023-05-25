@@ -2,8 +2,6 @@
 
 namespace Sift;
 
-use Illuminate\Support\Arr;
-
 class Sift
 {
     private $data;
