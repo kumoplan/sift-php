@@ -2,7 +2,7 @@
 
 namespace Sift;
 
-use Underscore\Types\Arrays;
+use Illuminate\Support\Arr;
 
 class Sift
 {
@@ -82,7 +82,7 @@ class Sift
                 }
             }
 
-            $value = Arrays::get($item, $key);
+            $value = Arr::get($item, $key);
             $x = call_user_func_array($fn, [$validatorValue, $value, $key, $item]);
             $result = $x;
         }
